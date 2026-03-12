@@ -1,8 +1,28 @@
 # Super Gemini Workspace 🚀
 
-**Super Gemini Workspace** is a high-performance Chrome extension that transforms the official Google Gemini interface into a powerful, organized productivity hub. It adds a persistent, searchable, and customizable sidebar that lets you group chats into folders, pin your most important conversations, and hide the ones you don't need.
+**Super Gemini Workspace** transforms the official Google Gemini interface into a high-performance, organized productivity hub. Add folders, pin chats, and search your entire history instantly.
 
-![Super Gemini Workspace Preview](https://github.com/user-attachments/assets/placeholder-image) *Replace with a real screenshot of your sidebar*
+---
+
+## ⚡ Quick Start (Get it running in 60 seconds)
+
+1. **Download**: [Download this repo as a ZIP](https://github.com/mindthevirt/super-gemini-gui/archive/refs/heads/main.zip) and unzip it.
+2. **Install**: Go to `chrome://extensions/`, enable **Developer mode**, and click **Load unpacked**.
+3. **Select**: Choose the `gemini-extension` folder from the unzipped files.
+4. **Go**: Refresh [gemini.google.com](https://gemini.google.com) and start organizing!
+
+---
+
+## 📖 Table of Contents
+- [✨ Key Features](#-key-features)
+- [🛡️ Privacy & Performance](#️-privacy--performance)
+- [🚀 Detailed Installation](#-detailed-installation)
+- [🛠️ How It Works](#️-how-it-works)
+- [💾 Backup & Restore](#-backup--restore)
+- [📜 License](#-license)
+- [🤝 Contributing](#-contributing)
+
+---
 
 ## ✨ Key Features
 
@@ -16,57 +36,58 @@ Keep your most frequent chats at the top. Use the "Star" icon to pin conversatio
 Find any chat instantly. Our lightning-fast search filters across your Pinned chats, Workspace folders, and Recent Activity simultaneously.
 
 ### 🧪 Smart Badges
-Automatically detects and badges **Deep Research** and **Gems** chats using native URL and aria-label heuristics, making it easy to identify advanced chat types.
+Automatically detects and badges **Deep Research** and **Gems** chats using native URL and aria-label heuristics.
 
 ### 🌓 Native Theme Support
-Seamlessly matches your system's light or dark mode. The UI is built using CSS variables to ensure it feels like a native part of the Gemini ecosystem.
-
-### 🛡️ Privacy & Performance First
-- **Zero Server Side**: Your data never leaves your browser. All folder structures and pinned chats are stored in `chrome.storage.local`.
-- **Silent Sync**: Unlike other extensions, Super Gemini Workspace scrapes your chat history silently without forcing the native sidebar to open or flicker.
-- **GPU-Accelerated**: Smooth animations and transitions for a premium, jank-free experience.
-
-### 💾 Backup & Restore
-Moving to a new machine? Use the built-in Export/Import feature to backup your entire workspace configuration as a JSON file.
+Seamlessly matches your system's light or dark mode using modern CSS variables.
 
 ---
 
-## 🚀 Getting Started (Developer Install)
+## 🛡️ Privacy & Performance
 
-Until this is on the Chrome Web Store, you can install it manually:
+- **100% Private**: Your data never leaves your browser. All folder structures and pinned chats are stored locally in `chrome.storage.local`.
+- **Silent Sync**: Scrapes your chat history silently without forcing the native sidebar to open or flicker.
+- **GPU-Accelerated**: Smooth 60fps animations and transitions for a premium experience.
 
-1.  **Clone the Repo**:
-    ```bash
-    git clone https://github.com/yourusername/super-gemini-workspace.git
-    ```
-2.  **Open Chrome Extensions**: Go to `chrome://extensions/` in your browser.
-3.  **Enable Developer Mode**: Toggle the switch in the top-right corner.
-4.  **Load Unpacked**: Click "Load unpacked" and select the `gemini-extension` folder from this repository.
-5.  **Refresh Gemini**: Open [gemini.google.com](https://gemini.google.com) and start organizing!
+---
+
+## 🚀 Detailed Installation
+
+### Developer Install (Recommended)
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/mindthevirt/super-gemini-gui.git
+   ```
+2. **Open Extensions**: Navigate to `chrome://extensions/`.
+3. **Enable Developer Mode**: Toggle the switch in the top-right corner.
+4. **Load Extension**: Click **Load unpacked** and select the `gemini-extension` folder.
+5. **Refresh**: Open [Gemini](https://gemini.google.com) to see your new workspace.
 
 ---
 
 ## 🛠️ How It Works
 
-The extension uses a "Silent Scraper" architecture:
-- **Scraper**: A debounced `MutationObserver` watches the DOM for new chat links and updates the internal state.
+The extension uses a unique "Silent Scraper" architecture:
+- **Scraper**: A debounced `MutationObserver` watches for new chat links and updates the internal state.
 - **View**: A vanilla JavaScript `render()` loop creates a custom sidebar and injects it into the page.
-- **Styles**: Modern CSS with custom properties (`--var`) and high-performance transitions for folder expansion and interaction feedback.
+- **Styles**: Modern CSS with custom properties (`--var`) and high-performance transitions.
+
+---
+
+## 💾 Backup & Restore
+Moving to a new machine? Use the built-in Export/Import feature (⚙️ icon) to backup your entire workspace configuration as a JSON file.
 
 ---
 
 ## 📜 License
-
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
 ## 🤝 Contributing
-
-Contributions are welcome! Whether it's a bug fix, a new feature, or a UI enhancement, feel free to open a Pull Request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
+Contributions are welcome! 
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
