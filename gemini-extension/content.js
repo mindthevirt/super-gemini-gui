@@ -132,7 +132,7 @@ function render() {
   sb.innerHTML = `
     <div class="sb-header">
       <div class="sb-brand sb-brand-container">
-        GEMINI PRO WORKSPACE
+        SUPER GEMINI GUI
         <span id="super-settings" class="sb-settings-icon" title="Backup/Restore Workspace">⚙️</span>
       </div>
       <button class="sb-new-chat" id="super-new">＋ New Chat</button>
@@ -526,7 +526,7 @@ async function init() {
     state.expandedFolders = data.expandedFolders || [];
     render();
   } catch (error) {
-    console.warn("Super Gemini Workspace: Extension context invalidated. Please refresh the page.");
+    console.warn("Super Gemini GUI: Extension context invalidated. Please refresh the page.");
     return;
   }
 

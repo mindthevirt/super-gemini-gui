@@ -1,8 +1,8 @@
-# Super Gemini Workspace 🚀
+# Super Gemini GUI 🚀
 
-![Super Gemini Workspace Headline](screenshots/headline.png)
+![Super Gemini GUI Headline](screenshots/headline.png)
 
-**Super Gemini Workspace** transforms the official Google Gemini interface into a high-performance, organized productivity hub. Add folders, pin chats, and search your entire history instantly.
+**Super Gemini GUI** transforms the official Google Gemini interface into a high-performance, organized productivity hub. Add folders, pin chats, and search your entire history instantly.
 
 ---
 
